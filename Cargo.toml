@@ -1,7 +1,7 @@
 [package]
 authors = ["Ruben Paz <me@ruben.io>"]
 readme = "README.md"
-name = "nrf52_tests"
+name = "nrf52-tests"
 version = "0.1.0"
 
 [dependencies]
@@ -13,12 +13,6 @@ nrf52832-hal = "0.7.0"
 embedded-hal-spy = "0.0.3"
 nrf52832-pac = "0.6.0"
 embedded-hal = "0.2.2"
-
-# this lets you use `cargo fix`!
-
-[[bin]]
-name = "nrf52_tests"
-path = "src/main.rs"
 
 [profile.release]
 codegen-units = 1 # better optimizations
